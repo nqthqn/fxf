@@ -10,7 +10,7 @@ import FunLists exposing (data)
 all : Test
 all =
     describe "Testing is fun"
-        [ describe "Unit test examples"
+        [ describe "tests!!!!"
             [ test "euros" <|
                 \() ->
                     Expect.equal (FunLists.euros data) euroData

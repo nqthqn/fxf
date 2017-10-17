@@ -11,20 +11,31 @@ data =
     ]
 
 
+type alias Item =
+    { name : String, price : Float }
+
+
+euros : List Item -> List Item
 euros =
-    []
+    List.map (\item -> { item | price = item.price * 0.85 })
 
 
+cheap : List Item -> List Item
 cheap =
-    []
+    List.filter (\item -> item.price <= 10)
 
 
+priciest : List Item -> Item
 priciest =
-    []
+    List.foldl costly { name = "", price = 0 }
 
 
-priceyItem i1 i2 =
-    []
+costly : Item -> Item -> Item
+costly i1 i2 =
+    if i1.price > i2.price then
+        i1
+    else
+        i2
 
 
 
