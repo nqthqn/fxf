@@ -1,0 +1,17 @@
+[
+  {
+    "cake_id": 2,
+    "id": 1,
+    "name": "Marie-Antoinette"
+  },
+  {
+    "cake_id": 2,
+    "id": 2,
+    "name": "Juan"
+  },
+  {
+    "cake_id": 1,
+    "id": 2,
+    "name": "Henrietta"
+  }
+]
